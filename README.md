@@ -53,11 +53,34 @@ grunt lint
 Make sure your code doesn't suck
 ```
 
-###Client Tests
+### Client Tests
 Client tests should always be run inside the core/client directory. Any time you have grunt dev running the client tests will be available at <http://localhost:4200/tests>
 
+```
+ember test
+ Run all tests in Chrome + Firefox
+```
+```
+ember test --server
+ Run all tests, leave results open, and watch for changes
+```
+```
+ember test -f 'gh-my-component'
+ Run tests where `describe()` or `it()` matches supplied argument
+ Note: Case sensitive
+```
+```
+ember test --launch=chrome
+ Run all tests in Chrome only
+```
+```
+ember test -s -f 'Acceptance: Settings - General' --launch=chrome
+ Most useful test comment for continuous local development
+ Targets specific test of area being worked on
+ Only using Chrome to keep resource usage minimal
+```
 
-##Troubleshooting
+## Troubleshooting
 
 Some common Ghost development problems and their solutions
 ERROR: (EADDRINUSE) Cannot start Ghost
