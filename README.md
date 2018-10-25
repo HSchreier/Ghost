@@ -6,51 +6,51 @@
 
 ```
 grunt dev
-Default way of running Ghost in development mode
-Builds admin files on start & then watches for changes
+ Default way of running Ghost in development mode
+ Builds admin files on start & then watches for changes
 ```
 ```
 grunt dev --server
-Ignores admin changes
+ Ignores admin changes
 ```
 ```
 grunt dev --no-server-watch
-Ignores server changes
+ Ignores server changes
 ```
 ```
 grunt build
-Build admin client manually
+ Build admin client manually
 ```
 ```
 grunt prod
-Build full Ghost package for production
+ Build full Ghost package for production
 ```
 
 ### Server Tests
 Tests run with SQlite. To use MySQL, prepend commands with NODE_ENV=testing-mysql
 ```
 grunt test-all
-Run all tests
+ Run all tests
 ```
 ```
 grunt test-unit
-Run unit tests
+ Run unit tests
 ```
 ```
 grunt test-integration
-Run integration tests
+ Run integration tests
 ```
 ```
 grunt test-functional
-Run functional tests
+ Run functional tests
 ```
 ```
 grunt test:path/to/test.js
-Run a single test
+ Run a single test
 ```
 ```
 grunt lint
-Make sure your code doesn't suck
+ Make sure your code doesn't suck
 ```
 
 ### Client Tests
