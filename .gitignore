@@ -6,6 +6,19 @@ b-cov
 *.out
 *.pid
 *.gz
+.brackets.json
+
+# MacOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
 
 !core/test/utils/fixtures/**/*.csv
 
